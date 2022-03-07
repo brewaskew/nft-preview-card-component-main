@@ -34,7 +34,7 @@ h1:hover {
 p {
     color: hsl(215, 51%, 70%);
     padding: 1em 0;
-    line-height: 1.25em;
+    line-height: 1.5em;
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -94,13 +94,13 @@ p.price {
     color: hsl(178, 100%, 50%);
     font-weight: 600;
     display: inline-flex;
-    margin-top: -.5em;
+    margin-top: -.25em;
 }
 
 p.timeLeft {
     display: inline-flex;
     float: right;
-    margin-top:-.5em;
+    margin-top:-.25em;
 }
 
 .price img, .timeLeft img {
