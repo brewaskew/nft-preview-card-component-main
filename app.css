@@ -1,14 +1,11 @@
 html {
-    font-family: font-family: 'Outfit', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 main {
+    box-sizing: border-box;
     background-color: hsl(217, 54%, 11%);
-        
-}
-
-.card {
-    background-color: hsl(216, 50%, 16%);
+    color: hsl(215, 51%, 70%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -16,5 +13,113 @@ main {
     flex-direction: column;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+hr {
+    width: 90%;
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+    border: none;
+}
+
+h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+h1:hover {
+    color:hsl(178, 100%, 50%);
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    padding: 1em 0;
+    line-height: 1.5em;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a span {
+    color: white;
+}
+
+a span:hover {
+    color:hsl(178, 100%, 50%);
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 375px;
+    border-radius: 5%;
+}
+
+.linkImage {
+    max-width: 87%;
+}
+
+a:hover span.overlay {
+    display: block;
+    background-color: rgba(0,255,247,0.3);
+    height: 326px;
+    width: 326px;
+    position: relative;
+    bottom: 354px;
+    margin-bottom: -325px;
+    border-radius: 5%;
+}
+
+.nftImage {
+    max-width: 100%;
+    margin: 1.6em 0;
+    border-radius: 5%;
+}
+
+.overlay:hover {
+    background-color: hsl(178, 100%, 50%);
+}
+
+.nftInfo {
+    text-align: left;
+    padding: 0 2em;
+    width: 85%;
+}
+
+p.price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    display: inline-flex;
+}
+
+p.timeLeft {
+    display: inline-flex;
+    float: right;
+}
+
+.price img, .timeLeft img {
+    margin-right: .5em;
+}
+
+.avatar {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 10%;
+    margin-right: .75em;
+    vertical-align: middle;
+}
+
+.attribution {
+    margin-top: 2em;
+    font-size: 11px; 
+    justify-content: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
