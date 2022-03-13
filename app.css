@@ -23,7 +23,7 @@ hr {
 h1 {
     color: white;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 h1:hover {
@@ -34,8 +34,8 @@ h1:hover {
 p {
     color: hsl(215, 51%, 70%);
     padding: 1em 0;
-    line-height: 1.5em;
-    font-size: 15px;
+    line-height: 1.5rem;
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: 1px;
 }
@@ -44,11 +44,11 @@ a {
     text-decoration: none;
 }
 
-a span {
+.creatorName {
     color: white;
 }
 
-a span:hover {
+.creatorName:hover {
     color:hsl(178, 100%, 50%);
     transition: .5s;
 }
@@ -67,8 +67,8 @@ a span:hover {
     max-width: 87%;
 }
 
-a:hover span.overlay {
-    display: block;
+a:hover span.overlay { 
+    display: flex;
     background-color: rgba(0,255,247,0.3);
     height: 326px;
     width: 326px;
@@ -76,51 +76,71 @@ a:hover span.overlay {
     bottom: 344px;
     margin-bottom: -325px;
     border-radius: 5%;
+    justify-content: center;
+    align-items: center;
 }
+
+.hoverEye {
+    display: none;
+}
+
+ a:hover .hoverEye {
+    display: block;
+ }
 
 .nftImage {
     max-width: 100%;
-    margin: 1.6em 0 1em 0;
+    margin: 1.6rem 0 1rem 0;
     border-radius: 5%;
 }
 
 .nftInfo {
     text-align: left;
-    padding: 0 2em;
-    width: 85%;
+    padding: 0 2rem;
+    width: 85%;    
 }
 
 p.price {
     color: hsl(178, 100%, 50%);
     font-weight: 600;
     display: inline-flex;
-    margin-top: -.25em;
+    margin-top: -.25rem;
+}
+
+p.price::before {
+    content: url("images/icon-ethereum.svg");
+    margin-right: 5px;
 }
 
 p.timeLeft {
     display: inline-flex;
     float: right;
-    margin-top:-.25em;
+    margin-top:-.25rem;
+}
+
+p.timeLeft::before {
+    content: url("images/icon-clock.svg");
+    margin-right: 5px;
 }
 
 .price img, .timeLeft img {
-    margin-right: .5em;
+    margin-right: .5rem;
 }
 
 .avatar {
     border: 1px solid white;
     border-radius: 50%;
     width: 10%;
-    margin-right: .75em;
+    margin-right: .75rem;
     vertical-align: middle;
 }
 
 .createdBy {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .attribution {
-    margin-top: 2em;
+    margin-top: 2rem;
     font-size: 11px; 
     justify-content: center;
 }
