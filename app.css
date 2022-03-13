@@ -20,13 +20,13 @@ hr {
     border: none;
 }
 
-h1 {
+h1 a {
     color: white;
     font-weight: 600;
     font-size: 1.5rem;
 }
 
-h1:hover {
+h1 a:hover {
     color:hsl(178, 100%, 50%);
     transition: .5s;
 }
@@ -97,7 +97,7 @@ a:hover span.overlay {
 .nftInfo {
     text-align: left;
     padding: 0 2rem;
-    width: 85%;    
+    width: fit-content;
 }
 
 p.price {
@@ -121,10 +121,6 @@ p.timeLeft {
 p.timeLeft::before {
     content: url("images/icon-clock.svg");
     margin-right: 5px;
-}
-
-.price img, .timeLeft img {
-    margin-right: .5rem;
 }
 
 .avatar {
