@@ -23,7 +23,8 @@ hr {
 h1 a {
     color: white;
     font-weight: 600;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: 1rem;
 }
 
 h1 a:hover {
@@ -35,7 +36,8 @@ p {
     color: hsl(215, 51%, 70%);
     padding: 1em 0;
     line-height: 1.5rem;
-    font-size: 18px;
+    /* font-size: 18px;*/
+    font-size: .9rem;
     font-weight: 300;
     letter-spacing: 1px;
 }
@@ -59,22 +61,29 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-width: 375px;
+    /* max-width: 375px; */
+    max-width: 350px;
     border-radius: 5%;
 }
 
 .linkImage {
-    max-width: 87%;
+    /* max-width: 87%; */
+    max-width: 80%;
+    
 }
 
 a:hover span.overlay { 
     display: flex;
     background-color: rgba(0,255,247,0.3);
-    height: 326px;
-    width: 326px;
+    /* height: 326px;
+    width: 326px; */
+    height: 280px;
+    width: 280px;
     position: relative;
-    bottom: 344px;
-    margin-bottom: -325px;
+    /* bottom: 344px; */
+    bottom: 298px;
+    /* margin-bottom: -325px; */
+    margin-bottom: -280px;
     border-radius: 5%;
     justify-content: center;
     align-items: center;
@@ -96,7 +105,7 @@ a:hover span.overlay {
 
 .nftInfo {
     text-align: left;
-    padding: 0 2rem;
+    padding: 0 2rem 0 2.2rem;
     width: fit-content;
 }
 
